@@ -1,0 +1,46 @@
+{
+  "name": "bpmui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bpmn-js": "^6.5.1",
+    "bpmn-js-properties-panel": "^0.33.2",
+    "camunda-bpmn-moddle": "^4.4.0",
+    "diagram-js-minimap": "^2.0.3",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  }
+}
